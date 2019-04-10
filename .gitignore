@@ -1,2 +1,5 @@
 /.idea
 /target/classes/com/mybatis/bean/*.class
+/target/classes/com/mybatis/BeanFactory/*.class
+/target/classes/com/mybatis/interceptor/*.class
+/target/classes/com/mybatis/proxy/*.class

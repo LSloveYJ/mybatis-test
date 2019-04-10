@@ -24,7 +24,6 @@
         FROM student s,
              course c
         WHERE s.id = c.student_id
-          AND s.name = 'xix'
     </select>
 
     <insert id="insert" parameterType="com.mybatis.bean.Student">

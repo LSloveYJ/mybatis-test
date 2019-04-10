@@ -27,4 +27,6 @@ public class Student {
 
     private StudentEnum level;
 
+    private String city;
+
 }
