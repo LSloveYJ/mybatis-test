@@ -14,8 +14,6 @@ public class ProxyFactory {
 
         Invocate invocate = new Invocate(bs);
 
-        Class[] bss = {BaseService.class};
-
         return (BaseService) Proxy.newProxyInstance(bs.getClass().getClassLoader(), bs.getClass().getInterfaces(), invocate);
     }
 }

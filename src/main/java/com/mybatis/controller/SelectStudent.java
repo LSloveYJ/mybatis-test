@@ -25,6 +25,8 @@ public class SelectStudent {
             SqlSession sqlSession = sqlSessionFactory.openSession();
             StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
             List<Student> list = mapper.getList();
+            mapper.getList();
+            mapper.getList();
             if (list != null) {
                 System.out.println(list);
             }
