@@ -25,10 +25,16 @@ public class SelectStudent {
             SqlSession sqlSession = sqlSessionFactory.openSession();
             StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
             List<Student> list = mapper.getList();
-            mapper.getList();
-            mapper.getList();
+            List<Student> list2 = mapper.getList();
+            List<Student> list3 = mapper.getList();
             if (list != null) {
                 System.out.println(list);
+            }
+            if (list2 != null) {
+                System.out.println(list2);
+            }
+            if (list3 != null) {
+                System.out.println(list3);
             }
             sqlSession.commit();
             sqlSession.close();
